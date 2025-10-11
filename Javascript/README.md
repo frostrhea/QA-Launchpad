@@ -1,4 +1,4 @@
-<h1 style="color: #4c8a46;">🚀 QA Launchpad Series </h1>
+<h1 style="color: #4c8a46;">🚀 QA Launchpad Program </h1>
 
 ## Week 1 - JavaScript
 
