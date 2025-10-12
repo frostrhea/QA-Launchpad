@@ -31,3 +31,4 @@
   });
   ```
 - Learned how to check for special characters, uppercase, and numbers.
+- Importance of file naming and conventions.
