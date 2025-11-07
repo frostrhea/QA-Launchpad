@@ -1,6 +1,6 @@
 <h1 style="color: #4c8a46;">🚀 QA Launchpad Program </h1>
 
-## Week 1 - Setting Up & Running Your First Automation Test Resources 
+## Week 2 - Setting Up & Running Your First Automation Test Resources 
 This week covers test automation using Playwright for web applications. Includes locator strategies, running tests, and some tips I learned for stable selectors.
 
 ### a. Environment
