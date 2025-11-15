@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('Successful Login Test', async ({ page }) => {
+test('TC-01 - Successful Login Test', async ({ page }) => {
     // Step 1: Navigate to the login page
     await page.goto('https://www.saucedemo.com/');
     // Step 2: Enter username
