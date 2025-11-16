@@ -16,20 +16,25 @@ test('TC-02 — Order a product test', async ({ page }) => {
 
     // Step 3: Click the cart icon (top-right)  
     await page.locator('.shopping_cart_link').click();
+
     // Step 4: Verify `Sauce Labs Backpack` appears in the cart items
     await expect(page.locator('.cart_item')).toContainText(productName);
+    
     // Step 5: Click Checkout
     await page.locator('#checkout').click();
+    
     // Step 6: Enter First name, Last name, and Postal code → click Continue
     await page.locator('#first-name').fill('Jack');
     await page.locator('#last-name').fill('Frost');
     await page.locator('#postal-code').fill('1111');
     await page.locator('#continue').click();
+    
     // Step 7: On the Checkout Overview page, verify item description, quantity, and price are correct  
     const item = page.locator('.cart_item');
     await expect(item).toContainText(productName);
     await expect(item.locator('.cart_quantity')).toHaveText('1');
     await expect(item.locator('.inventory_item_price')).toHaveText('$29.99');
+    
     // Step 8: Click Finish
     await page.locator('#finish').click();
 
